@@ -1,7 +1,6 @@
-import './component/LoginMainPage/Loginpage.scss'
-import googleIcon from './image/google.svg'
-import facebookIcon from './image/facebook.svg'
-
+import "../../styles/AccountBtn.scss"
+import googleIcon from '../../image/google.svg'
+import facebookIcon from '../../image/facebook.svg' 
 export default function AccountBtn(){
 
     return(

@@ -1,7 +1,8 @@
 import closeIcon from './image/close.svg'
 import AgeSignInput from './AgeSignInput'
 import CaptionText from './CaptionText'
-import SignupRsponseBtn from './SignupResponse'
+import SwitchBtn from './component/SwitchBtn/SwitchBtn'
+// import SignupRsponseBtn from './SignupResponse'
 
 export default function Signup(){
     return(
@@ -12,7 +13,8 @@ export default function Signup(){
                 <img src={closeIcon} alt="close"/>
                 </section> 
                 
-                <SignupRsponseBtn/>
+                {/* <SignupRsponseBtn/> */}
+                <SwitchBtn/>
             </header>
 
             <div className="form-wrapper">

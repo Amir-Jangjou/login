@@ -1,10 +1,11 @@
-import "./InputBox.scss";
-import { Dispatch, SetStateAction, useState } from "react";
+import '../../styles/InputBox.scss'
+import{ useState, type Dispatch, type SetStateAction } from "react";
 import closeIcon from "../../image/close2.svg";
 
+
 interface props {
-  username:String;
-  password:String;
+  username:string;
+  password:string;
   setUsername: Dispatch<SetStateAction<string>>;
   setpassword: Dispatch<SetStateAction<string>>;
 }

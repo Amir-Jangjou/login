@@ -1,13 +1,13 @@
 
 import './Loginpage.scss';
-import SignupRsponseBtn from '../../SignupResponse';
-import InputBox from '../InputBox/inputBox';
-import AccountBtn from '../../AccountBtn';
+import InputBox from '../../component/InputBox/inputBox.js';
+import '../../styles/InputBox.scss'
+import AccountBtn from '../AccontBtn/accontBtn.js';
 import closeIcon from '../../image/close.svg'
-import CaptionText from '../../CaptionText';
-import {loginUser} from '../../API/auth'
-import LoginBtn from '../LoginBtn/LoginBtn';
+import CaptionText from '../../CaptionText.js';
+import {loginUser} from '../../API/auth.js'
 import { useState } from 'react';
+import SwitchBtn from '../SwitchBtn/SwitchBtn.js';
 
 
 export default function  Loginpage(){
@@ -15,7 +15,7 @@ export default function  Loginpage(){
     const [username, setUsername] = useState('')
     const [password, setpassword] = useState('')   
     
-    const handleLogin = async (e)=>{
+    const handleLogin = async(e: React.MouseEvent<HTMLButtonElement>)=>{
         e.preventDefault()
         try{
             const res = await loginUser({username, phone: password});
@@ -34,7 +34,7 @@ export default function  Loginpage(){
                 <img src={closeIcon} alt="close"/>
                 </section> 
                 
-                <SignupRsponseBtn/>
+                <SwitchBtn/>
             </header>
 
             
@@ -50,7 +50,7 @@ export default function  Loginpage(){
                         />
                         
                         {/* <LoginBtn onClick={handleLogin}/> */}
-                        <button onClick={handleLogin}>asdf</button>
+                        <button  onClick={handleLogin}>asdf</button>
                         
                     <div className="or-separator">
                         <div className="line"></div>

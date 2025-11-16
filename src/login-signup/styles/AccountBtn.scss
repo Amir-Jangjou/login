@@ -1,0 +1,25 @@
+$accountBtnColor : rgb(18, 28, 32);
+$bgColor : rgba(19, 31, 36, 1);
+
+.account{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.accountbtn{
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  background-color: $bgColor;
+  align-items: center;
+  padding: 13px 0;
+  margin: 10px 10px  0 10px;
+  transition: background 0.3s ease;
+  img{
+      width:20px;
+      margin-right: 3px;
+  }
+  &:hover{
+      background-color: $accountBtnColor;
+  }
+}

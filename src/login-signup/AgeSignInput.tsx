@@ -1,8 +1,8 @@
 import './component/LoginBtn/LoginBtn.scss'
 import "./AgeSubmit.scss";
-import "./component/InputBox/InputBox.scss";
+import "./styles/InputBox.scss";
 import { useState } from "react";
-import AccountBtn from "./AccountBtn";
+import AccountBtn from "./component/AccontBtn/accontBtn.js";
 import closeIcon from "./image/close2.svg";
 
 
