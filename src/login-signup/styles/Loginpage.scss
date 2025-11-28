@@ -1,5 +1,5 @@
-@use "../../styles/InputBox.scss";
-// @use './Loginpage.scss';
+
+@use "../../login-signup/styles//InputBox.scss";
 $bgColor : rgba(19, 31, 36, 1);
 $headerColor : rgba(241, 247, 251, 1);
 $footerTextColor : rgb(81, 100 , 108);
@@ -7,9 +7,16 @@ $btnSecondery:rgb(73, 192, 248);
 $secondryBorder:rgb(27, 168, 235);
 $btnFontColor: rgb(67, 173, 223);
 $btnloginhiveer : rgb(80, 211, 255);
-// $accountBtnColor : rgb(18, 28, 32);
+$formline : rgb(55, 70, 79);
 $blackColor: rgb(0,0,0);
+$bgColor : rgba(19, 31, 36, 1);
+$btnBorderColor : rgba(50, 63 ,71, 1);
 
+// @font-face {
+//   font-family:din_round;
+//   src: url("../../assets/din_round/dinroundpro.otf"  ) format("opentype");
+//   font-weight: 900;
+// }
 
 *{
   margin: 0;
@@ -19,9 +26,12 @@ $blackColor: rgb(0,0,0);
 
 body {
   overflow :hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
   height: 100vh;
   width: 100%;
-  background-color: $bgColor;    
+  background-color: $bgColor;
+//  font-family: din_round, sans-serif;    
 }
 
 a {
@@ -54,88 +64,59 @@ header {
   }
 }
 
+button {
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: 15px;
+  border: solid 2px $btnBorderColor;
+  box-shadow:0 2px $btnBorderColor ;
+  background-color: $bgColor;
+  text-align: center;
+  color: $btnFontColor;
+}
+
 .form-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;   
   align-items: center;       
-  height: 80vh;              
-  width: 100%;                
+  height: 70vh;              
+  width: 100%;
 }
 
 form{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  width: 410px;
+  width: 445px;
   padding:  16px;
 }
 
 h1 {
   color: $headerColor;
   font-size: 26px;
-  margin: 10px 0 15px;
+  margin-bottom: 25px;
   text-align: center;
   font-weight: 700;
 }
 
-.loginbtn {
-  width: 380px;
-  height:45px;
-  color: $blackColor;
-  background-color: $btnSecondery;
-  border: 1px solid $secondryBorder;
-  box-shadow:0 3px $secondryBorder ;
-  transition: backgroundColor 0.3s ease;
-  &:hover {
-      background-color:$btnloginhiveer;
-  }
-}
-//////////////////////////////////////////////////
-/// dont work
 .or-separator {
   display: flex;
   align-items: center;
   margin: 10px 0;
 
   .line {
-    flex: 1;
-    height: 10px;
-    background-color: #ccc;
-  }
+  flex: 1;
+  border-bottom: 2.5px solid $formline;
+}
 
   span {
     margin: 0 10px;
-    color: #555;
+    color: $formline;
     font-weight: bold;
   }
 }
-
-/////////////////////////////////////////////////
-/// 
-// .account{
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   text-align: center;
-// }
-// .accountbtn{
-//   width: 180px;
-//   display: flex;
-//   justify-content: center;
-//   background-color: $bgColor;
-//   align-items: center;
-//   padding: 13px 0;
-//   margin: 10px 10px  0 10px;
-//   transition: background 0.3s ease;
-//   img{
-//       width:20px;
-//       margin-right: 3px;
-//   }
-//   &:hover{
-//       background-color: $accountBtnColor;
-//   }
-// }
 
 .footer-text {
   color:$footerTextColor ;
@@ -159,6 +140,7 @@ h1 {
 @media (max-width: 700px) {
   form {
     width: 100%;
+    padding: 15px  30px;
   }
 
   .loginbtn {
@@ -166,17 +148,7 @@ h1 {
     margin: 15px 0;
   }
 
-  .account {
-    width: 98%;
-    display: flex;
-    justify-content: space-around;
-  }
 
-  .accountbtn {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
 
   .footer-text {
     width: 100%;

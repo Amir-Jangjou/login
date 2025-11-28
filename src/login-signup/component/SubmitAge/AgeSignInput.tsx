@@ -1,9 +1,10 @@
-import './component/LoginBtn/LoginBtn.scss'
-import "./AgeSubmit.scss";
-import "./styles/InputBox.scss";
+import '../../styles/LoginBtn.module.scss'
+import "../../styles/AgeSubmit.scss";
+import "../../styles/InputBox.scss";
 import { useState } from "react";
-import AccountBtn from "./component/AccontBtn/accontBtn.js";
-import closeIcon from "./image/close2.svg";
+import AccountBtn from "../AccontBtn/accontBtn.js";
+import clearIcon from "../../image/close2.svg";
+// import clearIcon from "../../image/";
 
 
 export default function AgeSignInput() {
@@ -18,22 +19,26 @@ export default function AgeSignInput() {
   return (
     <div className="input-container">
       <div className="input-wrapper">
-        <input
-          type="text"
-          placeholder="Age"
-          className="userAgeInput"
-          value={value}
-          onChange={(e) => setValue(e.target.value)}
-        />
-
-        {value && (
-          <img
-            src={closeIcon}
-            alt="clear"
-            className="clear-icon"
-            onClick={handleClear}
+        <div className='age_input'>
+          <input
+            type="text"
+            placeholder="Age"
+            className="userAgeInput"
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
           />
-        )}
+
+          {value && (
+            <img
+              src={clearIcon}
+              alt="clear"
+                className="clear-icon"
+                onClick={handleClear}
+            />
+          )}
+
+        </div>
+        
 
         <div className='ageCaption'>
           Providing your age ensures you get the right Duolingo experience. For more details, please visit our
@@ -49,11 +54,7 @@ export default function AgeSignInput() {
         </button>
         
       </div>
-      <div className="or-separator">
-          <div className="line"></div>
-          <span>OR</span>
-          <div className="line">  </div>
-      </div>
+      
       <AccountBtn/>
     </div>
   );

@@ -1,0 +1,31 @@
+$bgColor : rgba(19, 31, 36, 1);
+$btnBorderColor : rgba(50, 63 ,71, 1);
+$btnFontColor: #54c4f8;
+$loginBtnHover: rgb(80, 211, 255);
+$shadow: rgb(26, 168, 235);
+$secondryBorder:rgb(27, 168, 235);
+
+.loginBtn  {
+    width: 100%;
+    padding:14px 0;
+    margin-bottom: 15px;
+    font-weight: 900;
+    font-size: 16px;
+    border-radius: 17px;
+    border: solid 2px $btnBorderColor;
+    box-shadow:0 2px $btnBorderColor ;
+    background-color: $btnFontColor;
+    text-align: center;
+    color: $bgColor;
+    letter-spacing: 1.5px;
+    box-shadow:0 3px $shadow;
+    border: 1px solid $secondryBorder;
+    
+    &:hover{
+        background-color: $loginBtnHover;
+    }
+    
+}
+@media(max-width : 700) {
+    
+}

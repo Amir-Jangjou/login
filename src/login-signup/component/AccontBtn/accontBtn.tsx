@@ -3,7 +3,14 @@ import googleIcon from '../../image/google.svg'
 import facebookIcon from '../../image/facebook.svg' 
 export default function AccountBtn(){
 
-    return(
+    return(<>
+        <div className="or-separator">
+          <div className="line"></div>
+          <span>OR</span>
+          <div className="line">  </div>
+      </div>
+    
+        
         <div className='account'>
             <button className='accountbtn'>
                 <img src={googleIcon} alt=""/><span>GOOGLE</span>
@@ -12,5 +19,5 @@ export default function AccountBtn(){
                 <img src={facebookIcon} alt=""/><span>FACSBOOK</span>
             </button>
         </div>
-    )
+    </>)
 }

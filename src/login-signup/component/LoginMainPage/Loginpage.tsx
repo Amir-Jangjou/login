@@ -1,5 +1,5 @@
 
-import './Loginpage.scss';
+import '../../styles/Loginpage.scss';
 import InputBox from '../../component/InputBox/inputBox.js';
 import '../../styles/InputBox.scss'
 import AccountBtn from '../AccontBtn/accontBtn.js';
@@ -8,6 +8,7 @@ import CaptionText from '../../CaptionText.js';
 import {loginUser} from '../../API/auth.js'
 import { useState } from 'react';
 import SwitchBtn from '../SwitchBtn/SwitchBtn.js';
+import LoginBtn from '../LoginBtn/LoginBtn.js';
 
 
 export default function  Loginpage(){
@@ -49,14 +50,7 @@ export default function  Loginpage(){
                         setpassword={setpassword}
                         />
                         
-                        {/* <LoginBtn onClick={handleLogin}/> */}
-                        <button  onClick={handleLogin}>asdf</button>
-                        
-                    <div className="or-separator">
-                        <div className="line"></div>
-                        <span>OR</span>
-                        <div className="line">  </div>
-                    </div>
+                        <LoginBtn onClick={handleLogin}/>
 
                     <AccountBtn/>
                     

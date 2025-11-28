@@ -18,8 +18,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Loginpage from "./login-signup/component/LoginMainPage/Loginpage";
-import Signuppage from "./login-signup/Signup";
+import Loginpage from "./login-signup/component/LoginMainPage/Loginpage.js";
+import Signuppage from "./login-signup/Signup.js";
 
 const router = createBrowserRouter([
   {

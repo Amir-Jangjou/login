@@ -1,7 +1,7 @@
 import closeIcon from './image/close.svg'
-import AgeSignInput from './AgeSignInput'
-import CaptionText from './CaptionText'
-import SwitchBtn from './component/SwitchBtn/SwitchBtn'
+import AgeSignInput from './component/SubmitAge/AgeSignInput.js'
+import CaptionText from './CaptionText.js'
+import SwitchBtn from './component/SwitchBtn/SwitchBtn.js'
 // import SignupRsponseBtn from './SignupResponse'
 
 export default function Signup(){
