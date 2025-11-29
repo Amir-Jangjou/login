@@ -1,6 +1,6 @@
 import closeIcon from './image/close.svg'
 import AgeSignInput from './component/SubmitAge/AgeSignInput.js'
-import CaptionText from './CaptionText.js'
+import CaptionText from './component/CaotionText/CaptionText.js'
 import SwitchBtn from './component/SwitchBtn/SwitchBtn.js'
 // import SignupRsponseBtn from './SignupResponse'
 

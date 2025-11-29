@@ -20,6 +20,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Loginpage from "./login-signup/component/LoginMainPage/Loginpage.js";
 import Signuppage from "./login-signup/Signup.js";
+import CreateProfilePage from './login-signup/component/CreactProfilePage/creatProfilePage.js';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
   {
     path: '/Signuppage',
     element: <Signuppage/>
+  },
+  {
+    path:"/create-profile",
+    element:<CreateProfilePage />
+
   }
 ]);
 

@@ -14,21 +14,51 @@ $forgetColor :rgb(82, 101, 109);
 }
 
 .input-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%
     
-    img {
-        position: absolute;
-        right: 15px;
-        top: 20px;
-        width: 20px;
-    }
 }
 
-.userNameInput, .passwordInput {
+.clear-icon {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 20px;
+}
+
+.clear-icon-login {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 24px;
+}
+
+.clear-icon-name {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 24px;
+}
+
+.clear-icon-parent {
+    position: absolute;
+    right: 15px;
+    top: 110px;
+    width: 24px;
+}
+
+.clear-icon-password{ 
+    position: absolute;
+    right: 15px;
+    top: 152px;
+    width: 24px;
+}
+
+.input-box {
     width: 100%;
     color: $placeholderColor;
     background-color: $inputbgColor;
@@ -52,8 +82,8 @@ input:focus {
 
 .forgrt-link {
     position: absolute;
-    right: 25px;
-    top: 26px;
+    right: 15px;
+    top: 94px;
     transform: translateY(-50%);
     font-size: 14px;
     cursor: pointer;

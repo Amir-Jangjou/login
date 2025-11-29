@@ -23,7 +23,7 @@ export default function InputBox({username, password, setUsername, setpassword}:
        <div className="input-wrapper">
         <input type="text" 
           placeholder="Email or username"
-          className="userNameInput"
+          className="input-box"
           value={value}
           onChange={(e: React.ChangeEvent<HTMLInputElement>)=>{
           setValue(e.target.value)
@@ -31,7 +31,7 @@ export default function InputBox({username, password, setUsername, setpassword}:
           }}
         />{value &&
             <img src={closeIcon} alt=""
-            className="clear-icon"
+            className="clear-icon-login"
             onClick={handleClear} 
             
             />
@@ -41,7 +41,7 @@ export default function InputBox({username, password, setUsername, setpassword}:
        <div className="input-wrapper">
           <input type="password" 
           placeholder="password"
-          className="passwordInput" 
+          className="input-box" 
           onChange={e => setpassword(e.target.value)}
           />
           <a href="#" className="forgrt-link">Forget?</a>

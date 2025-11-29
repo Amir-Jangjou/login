@@ -4,7 +4,7 @@ import InputBox from '../../component/InputBox/inputBox.js';
 import '../../styles/InputBox.scss'
 import AccountBtn from '../AccontBtn/accontBtn.js';
 import closeIcon from '../../image/close.svg'
-import CaptionText from '../../CaptionText.js';
+import CaptionText from '../CaotionText/CaptionText.js';
 import {loginUser} from '../../API/auth.js'
 import { useState } from 'react';
 import SwitchBtn from '../SwitchBtn/SwitchBtn.js';
@@ -38,26 +38,19 @@ export default function  Loginpage(){
                 <SwitchBtn/>
             </header>
 
-            
             <div className="form-wrapper">
                 <form>
                     <h1 >Login</h1>
-
                         <InputBox
                         username={username}
                         password={password}
                         setUsername={setUsername}
                         setpassword={setpassword}
-                        />
-                        
+                        /> 
                         <LoginBtn onClick={handleLogin}/>
-
-                    <AccountBtn/>
-                    
+                    <AccountBtn/>                   
                 </form>
-
                    <CaptionText/>
-
             </div>
         </div>
     );

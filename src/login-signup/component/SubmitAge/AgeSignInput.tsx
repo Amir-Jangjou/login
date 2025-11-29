@@ -2,9 +2,9 @@ import '../../styles/LoginBtn.module.scss'
 import "../../styles/AgeSubmit.scss";
 import "../../styles/InputBox.scss";
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import AccountBtn from "../AccontBtn/accontBtn.js";
 import clearIcon from "../../image/close2.svg";
-// import clearIcon from "../../image/";
 
 
 export default function AgeSignInput() {
@@ -45,13 +45,16 @@ export default function AgeSignInput() {
           <a href="#"> Privacy Policy</a>.
         </div>
 
-        <button 
-          className='AgeSubmit' 
-          disabled={!isNumberValid}
-          onClick={() => alert(`Age: ${value}`)}
-        >
-          NEXT
-        </button>
+        <Link to='/create-profile'>
+          <button 
+            className='AgeSubmit' 
+            disabled={!isNumberValid}
+          >
+            NEXT
+          </button>
+
+        </Link>
+        
         
       </div>
       
