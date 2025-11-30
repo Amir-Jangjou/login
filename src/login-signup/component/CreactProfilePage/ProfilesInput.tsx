@@ -53,7 +53,7 @@ export default function ProfileInput(){
                 <div className="input-wrapper">
                     <input type={show ? "text" : "password" } 
                     placeholder='Password'
-                    className="input-box" />
+                    className="input-box" /> 
                     <div onClick={()=>{setshow(!show)}}>
                         <img src={show? VisibilityOff  :  Visibility } alt="" className=" clear-icon-password" />                       
                     </div>

@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Link } from 'react-router-dom';
 import AccountBtn from "../AccontBtn/accontBtn.js";
 import clearIcon from "../../image/close2.svg";
+import style from "../../styles/LoginBtn.module.scss"
 
 
 export default function AgeSignInput() {
@@ -45,9 +46,9 @@ export default function AgeSignInput() {
           <a href="#"> Privacy Policy</a>.
         </div>
 
-        <Link to='/create-profile'>
+        <Link to='/create-profile' className={style.btnlink} >
           <button 
-            className='AgeSubmit' 
+             className={style.loginBtn } 
             disabled={!isNumberValid}
           >
             NEXT

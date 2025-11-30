@@ -1,5 +1,6 @@
 $accountBtnColor : rgb(18, 28, 32);
 $bgColor : rgba(19, 31, 36, 1);
+$formline : rgb(55, 70, 79);
 
 .account{
   display: grid;
@@ -23,6 +24,24 @@ $bgColor : rgba(19, 31, 36, 1);
       background-color: $accountBtnColor;
   }
 }
+
+.or-separator {
+display: flex;
+align-items: center;
+margin: 10px 0;
+
+.line {
+flex: 1;
+border-bottom: 2.5px solid $formline;
+}
+
+span {
+  margin: 0 10px;
+  color: $formline;
+  font-weight: bold;
+}
+}
+
 @media (max-width: 700px) {
     .account {
     width: 100%;
